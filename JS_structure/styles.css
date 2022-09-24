@@ -1,0 +1,16 @@
+.color_type{
+    color: aquamarine;
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+}
+body{
+    background-color: grey;
+}
+
+.dices{
+    width: 300px;
+    height: auto;
+}
+#principal_tittle{
+    font-size: 8rem;
+}

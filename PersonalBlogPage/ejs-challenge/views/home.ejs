@@ -1,0 +1,21 @@
+<%- include('Partials/header'); -%>
+
+<h1>Hello there!</h1>
+<div>
+    <p><%= Message1 %> </p>
+</div>
+
+<% for(var i = 0; i<= ComposePosts.length-1; i++){ %>
+    <% console.log(ComposePosts[i].name) %>
+    <div class="item">  
+        <h3><%= ComposePosts[i].name%></h3>
+        <p style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis">
+            <%= ComposePosts[i].description%>
+        </p>
+        <a href="../posts/<%= ComposePosts[i]._id%>">Read More</a>
+        
+    </div>
+    
+<% } %>    
+
+<%- include('Partials/footer'); -%>
